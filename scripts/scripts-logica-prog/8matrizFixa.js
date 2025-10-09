@@ -12,20 +12,8 @@ function gerarMatrizAleatoria(lado, min, max) {
     return mat
 }
 
-function somaElementosMatriz(mat) {
-    soma = 0
-    for (let i = 0; i < mat.length; i++) {
-        for (let j = 0; j < mat.length; j++) {
-            soma += mat[i][j]
-        }
-    }
-    console.log("Soma dos elementos da matriz: " + soma)
-    return soma
-}
-
 function principal(){
-    let mat = gerarMatrizSequencial(3)
-    somaElementosMatriz(mat)
+    let mat = gerarMatrizSequencial(3, 1, 20)
 }
 
 principal()

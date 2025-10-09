@@ -9,13 +9,11 @@ function gerarArrayAleatorio(min, max, qnt){
 }
 
 function ordenarArrayCrescente(arr){
-    arr.sort((a, b) => a - b);
-    return arr
+    return arr.sort((a, b) => a - b)
 }
 
 function ordenarArrayDecrescente(arr){
-    arr.reverse(arr.sort((a, b) => a - b))
-    return arr
+    return arr.reverse(arr.sort((a, b) => a - b))
 }
 
 function principal(){
