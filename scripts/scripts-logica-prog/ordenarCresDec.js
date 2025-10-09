@@ -10,15 +10,19 @@ function gerarArrayAleatorio(min, max, qnt){
 
 function ordenarArrayCrescente(arr){
     arr.sort((a, b) => a - b);
+    return arr
 }
 
 function ordenarArrayDecrescente(arr){
-    ordenarArrayCrescente(arr)
-    arr.reverse()
+    arr.reverse(arr.sort((a, b) => a - b))
+    return arr
 }
 
-let arr = gerarArrayAleatorio(1, 10, 20)
-ordenarArrayCrescente(arr)
-console.log(arr)
-ordenarArrayDecrescente(arr)
-console.log(arr)
+function principal(){
+    let arr = gerarArrayAleatorio(1, 20, 10)
+
+    ordenarArrayCrescente(arr)
+    ordenarArrayDecrescente(arr)
+}
+
+principal()
